@@ -1,5 +1,5 @@
 # An Introduction To Filmpire
-Filmpire is a comprehensive movie application where users can discover titles within specific categories and genres, save them to watchlists, view trailers for upcoming films, and access information about the cast, synopsis, and more.
+Filmpire is a comprehensive movie application where users can discover titles within specific categories and genres, save them to watchlists, view trailers for upcoming films, and access information about the cast, synopsis, and more. It combines the desire to unleash powerful creativity with the industry's most advanced JavaScript tools including React.js, Material UI, Alan AI, and more.
 
 ## Available Scripts
 
