@@ -30,7 +30,7 @@ export const tmdbApi = createApi({
         }
 
         // Get Popular Movies
-        return `movie/popular?page=${page}$api_key=${tmdbApiKey}`;
+        return `movie/popular?api_key=${tmdbApiKey}&language=en-US&page=${page}`;
       },
     }),
 

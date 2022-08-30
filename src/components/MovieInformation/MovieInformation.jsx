@@ -153,7 +153,7 @@ const MovieInformation = () => {
         {data?.videos?.results?.length > 0 && (
           <iframe
             autoPlay
-            className={classes.video}
+            className={classes.videos}
             frameBorder="0"
             title="Trailer"
             src={`https://www.youtube.com/embed/${data.videos.results[0].key}`}
