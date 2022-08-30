@@ -9,7 +9,7 @@ import { selectGenreOrCategory } from '../../features/currentGenreOrCategory';
 import useStyles from './styles';
 
 const categories = [
-  { label: 'Popular', value: 'Popular' },
+  { label: 'Popular', value: 'popular' },
   { label: 'Top Rated', value: 'top_rated' },
   { label: 'Upcoming', value: 'upcoming' },
 ];
