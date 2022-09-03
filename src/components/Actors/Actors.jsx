@@ -69,7 +69,7 @@ const Actors = () => {
         <Typography variant="h2" gutterBottom align="center">
           Movies
         </Typography>
-        {movies && <MovieList movies={movies} numberOfMovies = {12} />}
+        {movies && <MovieList movies={movies} numberOfMovies={12} />}
       </Box>
     </>
 
@@ -77,3 +77,4 @@ const Actors = () => {
 };
 
 export default Actors;
+
