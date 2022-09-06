@@ -5,13 +5,13 @@ import { ArrowBack } from '@mui/icons-material';
 
 import useStyles from './styles';
 import { useGetActorsDetailsQuery, useGetMoviesByActorIdQuery } from '../../services/TMDB';
-import { MovieList } from '..';
+import { MovieList, Pagination } from '..';
 
 const Actors = () => {
   const { id } = useParams();
   const history = useNavigate();
   const classes = useStyles();
-  const page = 1;
+  const [page, setPage] = useState(1);
 
   const { data, isFetching, error } = useGetActorsDetailsQuery(id);
   const { data: movies } = useGetMoviesByActorIdQuery({ id, page });
@@ -58,7 +58,7 @@ const Actors = () => {
             <Button variant="contained" color="primary" target="_blank" href={`https://www.imdb.com/name/${data?.imdb_id}`}>
               IMDB
             </Button>
-            <Button startIcon={<ArrowBack />} onClick={() => history.goback()} color="primary">
+            <Button startIcon={<ArrowBack />} onClick={() => history(-1)} color="primary">
               Back
             </Button>
           </Box>
@@ -70,6 +70,7 @@ const Actors = () => {
           Movies
         </Typography>
         {movies && <MovieList movies={movies} numberOfMovies={12} />}
+        {/* <Pagination currentPage={page} setPage={setPage} totalPages={movies?.total_pages} /> */}
       </Box>
     </>
 
